@@ -1,6 +1,7 @@
 $(document).ready(function(){
+    AOS.init();
     $(window).scroll(function(){
-        if(this.scrollY > 20){
+        if(this.scrollY >  $(window).height()){
             $('.navbar').addClass("sticky");
         }
         else{

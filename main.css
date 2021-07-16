@@ -1,10 +1,15 @@
-@import url('');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Encode+Sans+SC:wght@100&display=swap');
 
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: 'Courgette','微軟正黑體', sans-serif;
+}
+
+section{
+    margin-bottom: 100px;
 }
 
 .navbar{
@@ -13,7 +18,7 @@ body{
     width: 100%;
     padding: 30px 0;
     /* background: rgba(0, 0, 0, 0.1); */
-    font-family: '微軟正黑體', sans-serif;
+    z-index: 999;
     transition: all 0.3s ease;
 }
 
@@ -26,7 +31,7 @@ body{
 }
 
 .max-width{
-    max-width: 100%; /*1300px*/
+    max-width: 1300px; /*1300px*/
     padding: 0 100px;
     margin: 0 auto;
 }
@@ -92,8 +97,6 @@ body{
 
 .home-content{
     font-size: 50px;
-    -webkit-writing-mode: vertical-rl;
-    writing-mode: vertical-rl;
 }
 
 .home-content .second-title{
@@ -104,25 +107,303 @@ body{
     margin-top: 50px;
 }
 
-/* people section style */
+/* all section style */
+.vertical-text{
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+
 .name{
     font-size: 45px;
     color: #A19882;
     text-align: center;
 }
 
+.title{
+    font-size: 35px;
+    font-weight: 600;
+    color: #A19882;
+}
+
+.detail{
+    display: flex;
+    flex-wrap: wrap;/*超出範圍就換行*/
+    align-items: center;
+    justify-content: space-around;
+}
+
+.detail p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #A19882;
+}
+
+.learn-more{
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+    color: #A19882;
+}
+
+.learn-more::after{
+    content:"";
+    position: absolute;
+    width: 200px;
+    height: 14px;
+    top: 10px;
+    background: url('Arrow\ 1.png') no-repeat;
+    background-position: 100% 0%;
+    transition: all 0.5s ease;
+}
+
+.learn-more:hover{
+    transform: translateX(20%);
+}
+
+.learn-more:hover::after{
+    transform: translateX(30%);
+}
+
+/* people section style */
+
 .people-content hr{
     color: #A19882;
 }
 
+.people-content .people-title h4{
+    text-align: right;
+    margin-right: 20vw;
+    position: relative;
+}
+
+.people-content .people-title h4::after{
+    content: "";
+    position: absolute;
+    right: -50px;
+    top: 13px;
+    width: 100px;
+    height: 20px;
+    background-color: #E6DDC6;
+    z-index: -2;
+}
+
+.people-content .people-image{
+    width: 45%;
+    position: relative;
+}
+
+.people-content .people-image img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    object-position: 60% 0%;
+    /* object-position: center; */ 
+}
+
+.people-content .people-image::before{
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: -45px;
+    width: 300px;
+    height: 400px;
+    background-color: #FEF7DC;
+    z-index: -5;
+}
+
+.people-content .people-frame .people-detail{
+    width: 55%;
+}
+
+.people-content .people-frame .people-detail h4{
+    font-size: 30px;
+    font-weight: 600;
+    color: #A19882;
+}
+
+.people-content .people-frame .people-detail .learn-more{
+    margin-left: 400px;
+}
+
+.people-content .people-frame .people-detail .learn-more::after{
+    right: -30px;
+}
+
+
+
+/* people section style */
+.thing-content{
+    display: flex;
+    position: relative;
+}
+
+.thing-content .thing-title{
+    width: 30%;
+    position: relative;
+}
+
+.thing-content .thing-title::before{
+    content: "";
+    position: absolute;
+    top: 250px;
+    left: 70px;
+    width: 30px;
+    height: 130px;
+    background-color: #FEF7DC;
+    z-index: -5;
+}
+
+.thing-content .thing-title h4{
+    margin-top: 200px;
+}
+
+.thing-content .thing-detail{
+    width: 70%;
+    height: 500px;
+    position: relative;
+}
+
+.thing-content .thing-detail::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(1000_F_120472189_m49NsAnNbuwVppEmFfQC0HnQ9YMVfGFI.jpg);
+    opacity: 0.2;
+}
+
+.thing-content .thing-detail p{
+    width: 80%; /* 其實這邊也可以改成padding */
+}
+
+.thing-content .learn-more{
+    position: absolute;
+    left: 400px;
+    top: 400px;
+}
+
+.thing-content .learn-more::after{
+    left: -80px;
+}
+
+
+/* time section style */
+.time-content{
+    display: flex;
+    position: relative;
+}
+
+.time-content .time-title{
+    width: 30%;
+    position: relative;
+    right: -300px;
+}
+
+.time-content .time-title::before{
+    content: "";
+    position: absolute;
+    top: 170px;
+    left: 40px;
+    width: 30px;
+    height: 130px;
+    background-color: #E6DDC6;
+    z-index: -5;
+}
+
+.time-content .time-title h4{
+    margin-top: 200px;
+}
+
+.time-content .time-detail{
+    width: 60%;
+    height: 500px;
+    position: relative;
+    right: -10%;
+    background-color: #FEF7DC;
+}
+
+.time-content .time-detail::before{
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 60%;
+    left: -150px;
+    top: 50px;
+    background-color: #EAE1E1;
+    z-index: 1;
+}
+
+.time-content .time-detail::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 10%;
+    right: 10%;
+    border: solid 3px #E6DDC6;
+    z-index: -5;
+}
+
+.time-content .time-detail p{
+    width: 80%;
+    padding: 60px 0px;
+    line-height: 3rem;
+    letter-spacing: .3rem;
+    z-index: 10;
+}
+
+.time-content .learn-more{
+    position: absolute;
+    top: 450px;
+    left: 50px;
+}
+
+.time-content .learn-more::after{
+    left: -80px;
+}
+
+
 /* responseive media query start */
-@media (max-width: 690px){
-    .home-content{
-        font-size: 35px;
+@media (max-width: 1104px){
+    .people-content .people-image img{
+        width: 240px;
+        height: 320px;
+    }
+    
+    .people-content .people-image::before{
+        content: "";
+        position: absolute;
+        top: 32px;
+        left: -36px;
+        width: 240px;
+        height: 306px;
     }
 
-    .home-content .second-title span{
-        margin-top: 35px;
+    .people-content .people-frame .people-detail h4{
+        font-size: 24px;
+    }
+    
+    .people-content .people-frame .people-detail p{
+        font-size: 14px;
+    }
+
+    .people-content .people-frame .people-detail .learn-more::after{
+        top: 8px;
+        right: -24px;
+        width: 160px;
+        height: 14px;
+    }
+}
+
+@media (max-width: 1056px){
+    .people-content .people-frame .people-detail .learn-more::after{
+        width: 80px;
+        right: -16px;
     }
 }
 
@@ -141,6 +422,7 @@ body{
     
     .max-width{
         padding: 0 115px;
+        max-width: 800px;
     }
 
     .navbar .navbar-nav{
@@ -177,5 +459,32 @@ body{
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
+    }
+
+    .people-content .people-image{
+        width: 50%;
+        /* 下面兩個才能讓圖片置中 */
+        display: flex;
+        justify-content: center;
+    }
+
+    .people-content .people-image::before{
+        content: "";
+        position: absolute;
+        top: 32px;
+        left: 20px;
+        width: 240px;
+        height: 306px;
+    }
+
+}
+
+@media (max-width: 690px){
+    .home-content{
+        font-size: 35px;
+    }
+
+    .home-content .second-title span{
+        margin-top: 35px;
     }
 }
