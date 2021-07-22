@@ -8,6 +8,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 
 </head>
 <body>
@@ -18,16 +19,16 @@
             </div>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">茶屋の人</a>
+                    <a href="#people" class="nav-link">茶屋の人</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">茶屋の事</a>
+                    <a href="#thing-content" class="nav-link">茶屋の事</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">茶屋の時</a>
+                    <a href="#time" class="nav-link">茶屋の時</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">茶屋の物</a>
+                    <a href="#goods" class="nav-link">茶屋の物</a>
                 </li>
             </ul>
             <div class="menu-btn">
@@ -40,8 +41,16 @@
     <section class="home" id="home">
         <div class="max-width">
             <div class="vertical-text home-content">
-                <div class="first-title">世界越快</div>
-                <div class="second-title">心則<span>慢</span></div>
+                <div class="first-title">
+                    <span data-aos="zoom in">世</span>
+                    <span data-aos="zoom in" data-aos-delay="100">界</span>
+                    <span data-aos="zoom in" data-aos-delay="200">越</span>
+                    <span data-aos="zoom in" data-aos-delay="300">快</span></div>
+                <div class="second-title">
+                    <span data-aos="zoom in" data-aos-delay="400">心</span>
+                    <span data-aos="zoom in" data-aos-delay="500">則</span>
+                    <span class="slow" data-aos="zoom-in" data-aos-delay="1000">慢</span>
+                </div>
             </div>
         </div>
     </section>
@@ -50,21 +59,21 @@
     <section class="people" id="people">
         <div class="max-width">
             <div class="people-content">
-                <h2 class="name">茶屋</h2>
+                <h2 class="name" data-aos="zoom-in">茶屋
+                    <!-- <span class="typing"></span> -->
+                </h2>
                 <hr>
                 <div class="people-title">
-                    <h4 class="title">茶屋の人</h4>
+                    <h4 class="title" data-aos="fade-left">茶屋の人</h4>
                 </div>
                 <div class="people-frame detail">
-                    <div class="people-image">
+                    <div class="people-image" data-aos="slide-up" data-aos-anchor-placement="top-center">
                         <img src="teapeople.jpg">
                     </div>
-                    <div class="detail people-detail">
+                    <div class="detail people-detail" data-aos="fade-down">
                         <h4>Name</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis sem ac dignissim venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin porta est nisi, ut tincidunt eros iaculis at. Proin nec maximus nunc. Nunc cursus venenatis vestibulum. Nulla facilisi. Curabitur suscipit fringilla velit, in dictum lectus tempus quis. Ut maximus lorem ac risus sagittis venenatis. Ut in ipsum magna. Morbi a commodo diam. Donec blandit rhoncus lobortis. Sed id sapien erat. Sed ut ullamcorper mauris. Suspendisse finibus massa orci, non rutrum lorem efficitur vel. Cras eu eros urna.
-
-                            Fusce facilisis ipsum sed mauris dignissim tempor. Suspendisse aliquam tempus odio quis cursus. Aliquam et nulla et purus egestas hendrerit. Donec congue diam non justo interdum, in semper mi varius. Cras volutpat elit quis pellentesque accumsan. Morbi sed tincidunt ligula. Phasellus ultrices scelerisque maximus. Donec facilisis, mauris nec pulvinar consectetur, magna leo bibendum elit, ac placerat ante velit nec nulla.
-                        </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis sem ac dignissim vene
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis sem ac dignissim vene
                         <p class="learn-more">Learn More</p>
                                                     
                     </div>
@@ -76,17 +85,17 @@
     <!--Thing Section-->
     <section class="thing" id="thing">
         <div class="max-width">
-            <div class="thing-content">
+            <div id="thing-content" class="thing-content">
                 <div class="thing-title">
-                    <h4 class="vertical-text title">茶屋の事</h4>
+                    <h4 class="vertical-text title" data-aos="fade-down">茶屋の事</h4>
                 </div>
-                <div class="detail thing-detail">
+                <div class="detail thing-detail" data-aos="flip-left">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem ad dolores, id fugit ipsa debitis suscipit ex corrupti? Praesentium error quaerat soluta explicabo veniam enim nobis vero quidem, molestiae ratione?
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quaerat perspiciatis quibusdam dolore. Fuga quod mollitia natus laborum similique! Inventore fugiat quidem nemo, aspernatur fuga ratione perferendis ducimus at delectus!
                     </p>
                     
                 </div>
-                <p class="learn-more">Learn More</p>
+                <p class="learn-more" data-aos="fade-right">Learn More</p>
             </div>
         </div>
     </section>
@@ -95,8 +104,8 @@
     <section class="time" id="time">
         <div class="max-width">
             <div class="time-content">
-                <div class="detail time-detail">
-                    <p class="vertical-text">
+                <div class="detail time-detail" data-aos="zoom-out">
+                    <p class="vertical-text" data-aos="fade-right" data-aos-anchor-placement="top-center">
                         路邊有一地攤，擺地攤的是一個中年女人。一個中年男人騎著自行車過來送飯。
 
 他一下車，就謙意地笑道，對不起，來遲了，餓了吧？女人擡起頭，看到男人，眼睛里閃過一絲亮色，笑道，不急，還早呢。
@@ -107,7 +116,7 @@
                 </div>
                 <p class="learn-more">Learn More</p>
                 <div class="time-title">
-                    <h4 class="vertical-text title">茶屋の時</h4>
+                    <h4 class="vertical-text title" data-aos="fade-left">茶屋の時</h4>
                 </div>
             </div>
         </div>
@@ -118,7 +127,7 @@
         <div class="max-width">
             <div class="goods-content">
                 <div class="goods-title">
-                        <h4 class="title">茶屋の物</h4>
+                        <h4 class="title" data-aos="fade-up">茶屋の物</h4>
                 </div>
                 <!-- <div class="goods-frame">
                     <img src="tea1.jpg" alt="#" class="pic pic1">
@@ -130,34 +139,40 @@
                     </div>
                 </div> -->
                 <ul class="goods-list">
-                    <li class="goods-item">
+                    <li id="item1" class="goods-item item1" data-aos="fade-down">
                         <div class="goods-card">
                             <img src="tea1.jpg" alt="" class="pic pic1">
                             <div class="detail goods-detail">
                                 <h4 class="goods-subtitle">上等茶葉</h4>
                                 <p class="goods-text">
                                     這是一段文字這是一段文字這是一段文字這是一段文字這是一段文字
+                                    這是一段文字這是一段文字這是一段文字這是一段文字這是一段文字
+                                    這是一段文字這是一段文字這是一段文字這是一段文字這是一段文字
                                 </p>
                             </div>
                         </div>
                     </li>
-                    <li class="goods-item">
+                    <li id="item2" class="goods-item" data-aos="fade-down" data-aos-id="item1" data-aos-delay="300">
                         <div class="goods-card">
                             <img src="tea2.jpg" alt="" class="pic pic2">
                             <div class="detail goods-detail">
                                 <h4 class="goods-subtitle">精緻茶具</h4>
                                 <p class="goods-text">
                                     這是一段文字這是一段文字這是一段文字這是一段文字這是一段文字
+                                    這是一段文字這是一段文字這是一段文字這是一段文字這是一段文字
+                                    這是一段文字這是一段文字這是一段文字這是一段文字這是一段文字
                                 </p>
                             </div>
                         </div>
                     </li>
-                    <li class="goods-item">
+                    <li id="item3" class="goods-item item3" data-aos="fade-down" data-aos-id="item2" data-aos-delay="600">
                         <div class="goods-card">
                             <img src="tea3.jpg" alt="" class="pic pic3">
                             <div class="detail goods-detail">
                                 <h4 class="goods-subtitle">完美擺盤</h4>
                                 <p class="goods-text">
+                                    這是一段文字這是一段文字這是一段文字這是一段文字這是一段文字
+                                    這是一段文字這是一段文字這是一段文字這是一段文字這是一段文字
                                     這是一段文字這是一段文字這是一段文字這是一段文字這是一段文字
                                 </p>
                             </div>
@@ -165,7 +180,7 @@
                     </li>
                     
                 </ul>
-                <p class="learn-more">Learn More</p>   
+                <p class="learn-more" data-aos="fade-right">Learn More</p>   
             </div>
         </div>
     </section>
