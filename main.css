@@ -776,8 +776,39 @@ footer{
 }
 
 @media (max-width: 690px){
+    .max-width{
+        /* padding: 0 115px; */
+        max-width: 1000px;
+    }
+
+    h4{
+        font-size: 50px;
+        /* margin: 0; */
+    }
+
+    .menu-btn{
+        font-size: 50px;
+    }
+
+    .people-content h2{
+        font-size: 70px;
+        margin: 0;
+    }
+
+    .people-content .people-title h4{
+        font-size: 50px;
+    }
+
+    .people-content .people-image img{
+        width: 200%;
+    }
+
+    .people-content .people-detail p{
+        font-size: 30px;
+    }
+
     .home-content{
-        font-size: 35px;
+        font-size: 50px;
     }
 
     .home-content .second-title span{
