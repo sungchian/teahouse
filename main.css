@@ -86,7 +86,7 @@ section{
 .navbar.sticky{
     position: fixed;
     top: 0;
-    height: 100px;
+    height: 60px;
     padding: 20px 0;
     background: rgba(254, 247, 220, .8);
     /* opacity: .4; */
@@ -586,7 +586,7 @@ footer{
     color: var(--brown_lighter);
 }
 
-.foot-mid{
+/* .foot-mid{
     display: flex;
     color: var(--brown_lighter);
 }
@@ -610,6 +610,28 @@ footer{
 .mid-social .mid-social-list .mid-social-item{
     font-size: 25px;
     color: var(--brown_lighter);
+} */
+
+.foot-social{
+    display: flex;
+    justify-content: center;
+}
+
+.foot-social .mid-social-item{
+    display: inline-block;
+    /* border: solid 2px black;
+    border-radius: 10px; */
+    padding: 20px;
+    font-size: 30px;
+}
+
+.foot-social .mid-social-item i{
+    transition-duration: .5s;
+    color: var(--brown_lighter);
+}
+
+.foot-social .mid-social-item i:hover{
+    color: var(--brown_light);
 }
 
 .foot-subtitle{
@@ -638,15 +660,15 @@ footer{
     }
 
     .navbar .navbar-nav{
-        position: absolute;
-        right: -200px;
+        /* position: absolute; */
+        /* right: -200px; */
     }
 }
 
 @media screen and (max-device-width: 1104px){
     .navbar .navbar-nav{
-        position: absolute;
-        right: -300px;
+        /* position: absolute; */
+        /* right: -300px; */
     }
     
     .people-content .people-image::before{
@@ -747,8 +769,8 @@ footer{
 
     .navbar .navbar-nav li a{
         display: inline-block;
-        margin: 20px 0;
-        font-size: 25px;
+        margin: 20px -50px 50px 0;
+        font-size: 50px;
     }
 
     .people-content .people-image{
@@ -779,6 +801,10 @@ footer{
     .max-width{
         /* padding: 0 115px; */
         max-width: 1000px;
+    }
+
+    .navbar.sticky{
+        height: 100px;
     }
 
     .people-content h4{
@@ -858,6 +884,8 @@ footer{
 
     .goods-content .goods-list .goods-item .goods-text{
         font-size: 30px;
+        letter-spacing: 2px;
+        line-height: 3rem;
     }
 
 }
