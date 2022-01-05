@@ -95,8 +95,9 @@ section{
 }
 
 .navbar.sticky{
+    /* max-width: 690px; */
     position: fixed;
-    width: 100%;
+    /* width: 100%; */
     top: 0;
     height: 60px;
     padding: 10px 100px;
@@ -726,6 +727,10 @@ footer{
 }
 
 @media screen and (max-device-width: 980px){
+    body {
+        overflow: hidden !important;
+    }
+
     .navbar{
         position: absolute;
         /* top: 0; */
@@ -735,9 +740,6 @@ footer{
         -webkit-transition: all 0.3s ease;
         -moz-transition: all 0.3s ease;
         -o-transition: all 0.3s ease;
-    }
-    .navbar.sticky {
-        width: 50%;
     }
 
     .navbar.sticky .nav-item a{

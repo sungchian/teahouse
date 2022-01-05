@@ -33,10 +33,10 @@ $(document).ready(function(){
         $('html,body').animate({scrollTop: 0}, 500);
     });
 
-    var typed = new Typed(".typing", {
-        strings: ["中文", "Developer", "Designer"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
+    // var typed = new Typed(".typing", {
+    //     strings: ["中文", "Developer", "Designer"],
+    //     typeSpeed: 100,
+    //     backSpeed: 60,
+    //     loop: true
+    // });
 });
