@@ -15,7 +15,7 @@ $(document).ready(function(){
 
     $(window).scroll(function(){
         if(this.scrollY > 200){
-            $('.gotop').attr('style', 'opcaticy: 1');
+            $('.gotop').attr('style', 'opacity: 1');
         }
         else{
             $('.gotop').attr('style', 'opacity: 0');
